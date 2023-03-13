@@ -56,6 +56,12 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "#000000",
           "background": "#22da6e",
+          "background_templates": [
+            "{{if contains \"blue\" .Context}}#0081d7{{end}}",
+            "{{if contains \"green\" .Context}}#288d16{{end}}",
+            "{{if contains \"white\" .Context}}#FFFFFF{{end}}",
+            "{{if contains \"red\" .Context}}#FF0000{{end}}"
+          ],
           "template": " \u2388 {{.Context}}{{if .Namespace}}::{{.Namespace}}{{end}} "
         },
         {
